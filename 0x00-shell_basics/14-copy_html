@@ -1,0 +1,8 @@
+#!/bin/bash
+files=(*.html)
+for file in "${files[@]}"; do
+  if [ ! -e ../"$file" ] || [ "$file" -nt ../"$file" ]; then
+    cp "$file" ../
+  fi
+done
+
