@@ -1,14 +1,2 @@
 #!/bin/bash
-
-# Get a list of all .html files in the current directory
-files=(*.html)
-
-# Loop through each file
-for file in "${files[@]}"; do
-	  # Check if the file exists in the parent directory
-	    if [ ! -e ../"$file" ] || [ "$file" -nt ../"$file" ]; then
-		        # Copy the file to the parent directory
-			    cp "$file" ../
-			      fi
-		      done
-
+cp -u *.html ..
