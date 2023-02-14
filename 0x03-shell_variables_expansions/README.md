@@ -1,1 +1,1 @@
-this is a readme file
+0-alias is bash script that create an alias for ls
